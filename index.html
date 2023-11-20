@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="password_generator">
+      <section class="main_password">
+        <input id="inputPass" type="text" readonly />
+        <button class="btn" id="passBtn">
+          <svg><use href="./icon/icon.svg#reload"></use></svg>
+        </button>
+        <button class="btn" id="copyBtn">
+          <svg><use href="./icon/icon.svg#copy"></use></svg>
+        </button>
+      </section>
+      <br />
+      <section>
+        <label>Password Length</label>
+        <div class="password_length">
+          <input type="range" id="rangeLen" min="1" value="8" max="69" />
+          <input type="number" id="len" value="8" min="1" max="69" />
+        </div>
+      </section>
+      <br />
+      <section class="">
+        <div>
+          <input type="checkbox" id="upr" checked />
+          <label for="upr">Uppercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="low" checked />
+          <label for="low">Lowercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="num" checked />
+          <label for="num">Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sym" checked />
+          <label for="sym">Symbols</label>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
